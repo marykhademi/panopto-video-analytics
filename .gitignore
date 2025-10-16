@@ -205,3 +205,36 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project-specific data files
+data/raw/*.xlsx
+data/raw/*.csv
+data/raw/*.xls
+
+# Processed data (if large)
+data/processed/*.csv
+data/processed/*.parquet
+
+# Output files that get regenerated
+outputs/reports/*.html
+outputs/reports/*.pdf
+outputs/visualizations/*.png
+outputs/visualizations/*.jpg
+
+# Dashboard files (if they contain sensitive data)
+dashboards/*.pbix
+dashboards/*.twbx
+
+# Configuration files with sensitive info
+config_local.py
+.env.local
+
+# Large model files
+*.pkl
+*.joblib
+models/*.h5
+models/*.model
+
+# Temporary analysis files
+temp/
+scratch/
